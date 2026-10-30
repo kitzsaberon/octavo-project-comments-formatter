@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Octavo Project Comments Formatter",
+  "version": "1.0.0",
+  "description": "Adds formatting tools to Octavo Project Comments Modal.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Octavo Project Comments Formatter"
+  }
+}
